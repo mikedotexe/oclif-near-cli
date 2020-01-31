@@ -16,7 +16,7 @@ export function exists(path: string): Promise<boolean> {
 }
 
 export function loadJSON(path: string): Promise<any> {
-    debug('loadJSON %s', path)
+    // debug('loadJSON %s', path)
     // let loadJSON
     // try { loadJSON = require('load-json-file') } catch {}
     // if (loadJSON) return loadJSON.sync(path)

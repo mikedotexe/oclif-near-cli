@@ -16,28 +16,69 @@ Interact with NEAR Protocol, a blockchain great for building smart contracts and
 <!-- usage -->
 ```sh-session
 $ npm install -g near
-$ near COMMAND
+$ near-cli COMMAND
 running command...
-$ near (-v|--version|version)
+$ near-cli (-v|--version|version)
 near/0.0.0 darwin-x64 node-v10.16.0
-$ near --help [COMMAND]
+$ near-cli --help [COMMAND]
 USAGE
-  $ near COMMAND
+  $ near-cli COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`near hello [FILE]`](#near-hello-file)
-* [`near help [COMMAND]`](#near-help-command)
+* [`near-cli config`](#near-cli-config)
+* [`near-cli generate-keypair [ACCOUNTID]`](#near-cli-generate-keypair-accountid)
+* [`near-cli hello [FILE]`](#near-cli-hello-file)
+* [`near-cli help [COMMAND]`](#near-cli-help-command)
 
-## `near hello [FILE]`
+## `near-cli config`
+
+experience config options
+
+```
+USAGE
+  $ near-cli config
+
+OPTIONS
+  -h, --help  show CLI help
+
+EXAMPLE
+  $ near nearconfig
+  hello world from ./src/hello.ts!
+```
+
+_See code: [src/commands/config.ts](https://github.com/mikedotexe/near-cli/blob/v0.0.0/src/commands/config.ts)_
+
+## `near-cli generate-keypair [ACCOUNTID]`
 
 describe the command here
 
 ```
 USAGE
-  $ near hello [FILE]
+  $ near-cli generate-keypair [ACCOUNTID]
+
+ARGUMENTS
+  ACCOUNTID  Specify the account id
+
+OPTIONS
+  -h, --help  show CLI help
+
+EXAMPLE
+  $ near generate-keypair doomslug
+       Looks for a Keychain entry for the user.
+```
+
+_See code: [src/commands/generate-keypair.ts](https://github.com/mikedotexe/near-cli/blob/v0.0.0/src/commands/generate-keypair.ts)_
+
+## `near-cli hello [FILE]`
+
+describe the command here changedhello
+
+```
+USAGE
+  $ near-cli hello [FILE]
 
 OPTIONS
   -f, --force
@@ -45,19 +86,19 @@ OPTIONS
   -n, --name=name  name to print
 
 EXAMPLE
-  $ near hello
+  $ nearZ hello
   hello world from ./src/hello.ts!
 ```
 
 _See code: [src/commands/hello.ts](https://github.com/mikedotexe/near-cli/blob/v0.0.0/src/commands/hello.ts)_
 
-## `near help [COMMAND]`
+## `near-cli help [COMMAND]`
 
-display help for near
+display help for near-cli
 
 ```
 USAGE
-  $ near help [COMMAND]
+  $ near-cli help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for

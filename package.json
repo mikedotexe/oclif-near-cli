@@ -11,9 +11,10 @@
     "@oclif/command": "^1.5.19",
     "@oclif/config": "^1.13.3",
     "@oclif/plugin-help": "^2.2.3",
+    "@types/inquirer": "^6.5.0",
     "dotenv": "^8.2.0",
     "envfile": "^4.5.0",
-    "inquirer": "^7.0.3",
+    "inquirer": "^7.0.4",
     "nearlib": "^0.21.0",
     "query-string": "^6.10.1",
     "shelljs": "^0.8.3",
@@ -22,9 +23,9 @@
   "devDependencies": {
     "@oclif/dev-cli": "^1.22.2",
     "@oclif/test": "^1.2.5",
-    "@types/chai": "^4.2.7",
+    "@types/chai": "^4.2.8",
     "@types/mocha": "^5.2.7",
-    "@types/node": "^10.17.13",
+    "@types/node": "^10.17.14",
     "chai": "^4.2.0",
     "eslint": "^5.16.0",
     "eslint-config-oclif": "^3.1.0",
@@ -51,8 +52,11 @@
   "license": "MIT",
   "main": "lib/index.js",
   "oclif": {
+    "macos": {
+      "identifier": "com.nearprotocol.devcli"
+    },
     "commands": "./lib/commands",
-    "bin": "near",
+    "bin": "near-cli",
     "plugins": [
       "@oclif/plugin-help"
     ]

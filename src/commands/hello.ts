@@ -2,10 +2,10 @@ import {Command, flags} from '@oclif/command'
 import TranslatableCommand from "../translatable-command";
 
 export default class Hello extends TranslatableCommand {
-  static description = 'describe the command here'
+  static description = 'says hello'
 
   static examples = [
-    `$ nearZ hello
+    `$ near hello
 hello world from ./src/hello.ts!
 `,
   ];
