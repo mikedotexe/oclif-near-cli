@@ -17,7 +17,7 @@
     "inquirer": "^7.0.4",
     "nearlib": "^0.21.0",
     "query-string": "^6.10.1",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "tslib": "^1.10.0"
   },
   "devDependencies": {
